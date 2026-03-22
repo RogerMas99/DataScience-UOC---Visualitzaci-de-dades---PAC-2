@@ -2,7 +2,19 @@
 
 Aquest repositori recull tres visualitzacions creades per avaluar l'adequació de diferents representacions gràfiques segons la naturalesa de les dades i l'objectiu comunicatiu.
 
-## 1. Force-Directed Graph: Interaccions (Xarxa de Dofins)
+## 1. Timeline: Cronologia (Cursa Espacial)
+![Timeline Space Race](Timeline_Space_Race.png)
+[Codi Font](Codi_Timeline.py)
+
+**Tècnica i Origen:** Tècnica clàssica de representació cronològica lineal popularitzada a gran escala al segle XVIII per mapar la història.
+
+**Característiques i Dades:** Consumeixen dades temporals vinculades a variables qualitatives. Faciliten la comprensió de relacions de precedència, ritme i simultaneïtat. L'inconvenient principal és la dificultat de gestió de l'espai quan els esdeveniments s'aglomeren en finestres de temps molt curtes.
+
+**Anàlisi:** [Comenta què emfatitza aquesta línia de temps concreta i per què és la representació adequada].
+
+---
+
+## 2. Force-Directed Graph: Interaccions (Xarxa de Dofins)
 [![Previsualització Xarxa de Dofins](preview_dofins.PNG)](https://rogermas99.github.io/DataScience-UOC---Visualitzaci-de-dades---PAC-2/ForceDirected_Graph_Dolphins.html)
 
 [Codi Font](Codi_ForceDirected_Graph.py)
@@ -15,7 +27,7 @@ Aquest repositori recull tres visualitzacions creades per avaluar l'adequació d
 
 ---
 
-## 2. Sparklines: Evolució Borsa (Top 10 IBEX 35)
+## 3. Sparklines: Evolució Borsa (Top 10 IBEX 35)
 <p align="center">
   <img src="Sparklines_Top10_IBEX35.png" alt="Sparklines IBEX 35" width="65%">
 </p>
@@ -26,15 +38,3 @@ Aquest repositori recull tres visualitzacions creades per avaluar l'adequació d
 **Característiques i Dades:** Utilitzen dades quantitatives estructurades en sèries temporals. La seva gran fortalesa és la capacitat de mostrar la variància i les tendències generals de múltiples variables simultàniament ocupant un espai mínim. La limitació inherent és la impossibilitat d'extreure valors absoluts precisos.
 
 **Anàlisi:** [Escriu aquí la justificació de l'ús d'aquesta tècnica per a les cotitzacions i la conclusió extreta].
-
----
-
-## 3. Timeline: Cronologia (Cursa Espacial)
-![Timeline Space Race](Timeline_Space_Race.png)
-[Codi Font](Codi_Timeline.py)
-
-**Tècnica i Origen:** Tècnica clàssica de representació cronològica lineal popularitzada a gran escala al segle XVIII per mapar la història.
-
-**Característiques i Dades:** Consumeixen dades temporals vinculades a variables qualitatives. Faciliten la comprensió de relacions de precedència, ritme i simultaneïtat. L'inconvenient principal és la dificultat de gestió de l'espai quan els esdeveniments s'aglomeren en finestres de temps molt curtes.
-
-**Anàlisi:** [Comenta què emfatitza aquesta línia de temps concreta i per què és la representació adequada].
