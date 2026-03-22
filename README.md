@@ -113,8 +113,14 @@ Les dades provenen de [Yahoo Finance](https://es.finance.yahoo.com/), cobrint el
 La visualització mostra una taula de 10 files, una per empresa, on cada fila combina el nom, el ticker, el sector, el preu actual en euros, la variació percentual en 3 mesos i una sparkline de tendència. S'utilitza un codi de colors per diferenciar variacions positives (verd) de negatives (vermell). A simple vista, detectem que destaca Repsol (+57.5%) en contrast a Inditex (-10.0%) o BBVA (-9.4%). L'objectiu comunicatiu és permetre una comparació ràpida del comportament borsari recent de totes les empreses en una sola vista compacta: les sparklines permeten identificar patrons i tendències de forma ràpida, facilitant la comparació entre companyies.
 
 ## Fonts
+
 [DataVizCatalogue](https://datavizcatalogue.com/)
+
 [DataVizProject](https://datavizproject.com/)
+
 [Toucantoco - ForceDirectedGraph](https://www.toucantoco.com/en/glossary/force-directed-graph.html)
+
+[Wikipedia](https://es.wikipedia.org/wiki/)
+
 [Claude AI - Refinament codi](https://claude.ai/)
 
