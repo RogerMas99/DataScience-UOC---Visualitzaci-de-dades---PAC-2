@@ -123,30 +123,30 @@ for i, (ticker, nom, sector) in enumerate(zip(tickers, noms, sectors)):
     mid_y = (y_top + y_bot) / 2
 
     # Index number
-    fig.text(0.053, mid_y, f'{i+1:02d}', fontsize=8, color=TEXT_SEC,
+    fig.text(0.053, mid_y, f'{i+1:02d}', fontsize=10, color=TEXT_SEC,
              va='center', fontweight='bold')
 
     # Company name
-    fig.text(0.085, mid_y + 0.006, nom, fontsize=9.5, color=TEXT_PRI,
+    fig.text(0.085, mid_y + 0.006, nom, fontsize=12, color=TEXT_PRI,
              va='center', fontweight='bold')
     # Ticker
     fig.text(0.085, mid_y - 0.008, ticker.replace('.MC',''), fontsize=7,
              color=TEXT_SEC, va='center')
 
     # Sector badge (simulated with text box)
-    fig.text(0.245, mid_y, sector, fontsize=7.2, color=ACCENT,
+    fig.text(0.285, mid_y, sector, fontsize=9, color=ACCENT,
              va='center', fontfamily='DejaVu Sans',
              bbox=dict(boxstyle='round,pad=0.25', facecolor='#1E1A10',
                        edgecolor=ACCENT, linewidth=0.5, alpha=0.8))
 
     # Price
-    fig.text(0.460, mid_y + 0.005, f'{last:.2f}', fontsize=10,
+    fig.text(0.51, mid_y + 0.005, f'{last:.2f}', fontsize=12,
              color=TEXT_PRI, va='center', fontweight='bold', ha='right')
-    fig.text(0.460, mid_y - 0.009, '€', fontsize=7,
+    fig.text(0.51, mid_y - 0.009, '€', fontsize=9,
              color=TEXT_SEC, va='center', ha='right')
 
     # % change
-    fig.text(0.478, mid_y, f'{arrow} {abs(pct):.1f}%', fontsize=8.5,
+    fig.text(0.53, mid_y, f'{arrow} {abs(pct):.1f}%', fontsize=10.5,
              color=color, va='center', fontweight='bold')
 
     # Row separator line
@@ -164,6 +164,6 @@ fig.text(0.945, 0.018, 'No és assessorament financer',
          fontsize=7, color=TEXT_SEC, alpha=0.4, ha='right')
 
 out = 'sparklines_ibex35.png'
-plt.savefig(out, dpi=200, bbox_inches='tight', facecolor=BG)
+plt.savefig(out, dpi=1200, bbox_inches='tight', facecolor=BG)
 plt.close()
 print(f'Saved → {out}')

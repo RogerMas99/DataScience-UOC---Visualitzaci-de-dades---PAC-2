@@ -86,8 +86,8 @@ df["Subtítol"] = df["Fita"].apply(trunca)
 
 # ── Assigna alçades alternades automàticament ────────────────────────────────
 # Alterna amunt/avall i varia l'amplitud per evitar solapaments
-ALÇADES_AMUNT  = [0.72, 0.55, 0.82, 0.60, 0.75, 0.50, 0.68, 0.85, 0.58, 0.65]
-ALÇADES_AVALL  = [-0.45, -0.60, -0.50, -0.70, -0.55, -0.65, -0.48, -0.72, -0.52, -0.62]
+ALÇADES_AMUNT  = [0.82, 0.35, 0.42, 0.80, 0.3, 0.85, 0.30, 0.78, 0.38]
+ALÇADES_AVALL  = [-0.25, -0.70, -0.5, -0.60, -0.25, -0.75, -0.28, -0.82, -0.42]
 
 alçades = []
 idx_up, idx_dn = 0, 0
@@ -205,7 +205,7 @@ for _, row in df.iterrows():
     # ── Títol (nom missió) ────────────────────────────────────────────────────
     ax.text(x, h + sign * 0.072, row["Títol"],
             ha="center", va=va,
-            color="white", fontsize=13.5, fontweight="bold", zorder=9,
+            color="white", fontsize=14.5, fontweight="bold", zorder=9,
             bbox=dict(boxstyle="round,pad=0.38",
                       fc="#000000", ec=c, alpha=BBOX_ALPHA, lw=1.5))
 
@@ -216,10 +216,11 @@ for _, row in df.iterrows():
     dy_sub = sign * (0.072 + 0.105 + 0.040)
     ax.text(x, h + dy_sub, sub_wrapped,
             ha="center", va=va,
-            color=c, fontsize=10.5, style="italic",
+            color=c, fontsize=12, fontweight="bold",
+            fontfamily="DejaVu Sans",
             linespacing=1.45, zorder=9,
             bbox=dict(boxstyle="round,pad=0.32",
-                      fc="#000000", ec=c, alpha=BBOX_ALPHA * 0.82, lw=0.9))
+                      fc="#000000", ec=c, lw=0.9))
 
     # ── Badge nació ───────────────────────────────────────────────────────────
     # Desplaçament: dy_sub + alçada del subtítol (proporcional a n_lines)
@@ -276,5 +277,5 @@ fig.text(0.5, 0.012,
 plt.tight_layout(rect=[0, 0.02, 1, 0.88])
 
 arxiu = "timeline_cursa_espacial.png"
-plt.savefig(arxiu, dpi=300, bbox_inches="tight", facecolor=C_BG)
+plt.savefig(arxiu, dpi=1200, bbox_inches="tight", facecolor=C_BG)
 plt.show()
