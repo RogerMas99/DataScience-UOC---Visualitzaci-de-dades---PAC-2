@@ -3,7 +3,7 @@
 Aquest repositori recull tres visualitzacions creades per avaluar l'adequació de diferents representacions gràfiques segons la naturalesa de les dades i l'objectiu comunicatiu.
 
 ## 1. Force-Directed Graph: Interaccions (Xarxa de Dofins)
-[![Previsualització Xarxa de Dofins](preview_dofins.png)](https://rogermas99.github.io/DataScience-UOC---Visualitzaci-de-dades---PAC-2/ForceDirected_Graph_Dolphins.html)
+[![Previsualització Xarxa de Dofins](preview_dofins.PNG)](https://rogermas99.github.io/DataScience-UOC---Visualitzaci-de-dades---PAC-2/ForceDirected_Graph_Dolphins.html)
 
 [Codi Font](Codi_ForceDirected_Graph.py)
 
