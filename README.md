@@ -16,7 +16,7 @@ Aquest repositori recull tres visualitzacions creades per avaluar l'adequació d
 ---
 
 ## 2. Sparklines: Evolució Borsa (Top 10 IBEX 35)
-![Sparklines IBEX 35](Sparklines_Top10_IBEX35.png)
+<img src="Sparklines_Top10_IBEX35.png" alt="Sparklines IBEX 35" width="65%">
 [Codi Font](Codi_Sparkline.py)
 
 **Tècnica i Origen:** Terme formalitzat per Edward Tufte l'any 2006, definint-los com a gràfics de mida paraula, intensos en dades i sense marcs de coordenades explícits.
